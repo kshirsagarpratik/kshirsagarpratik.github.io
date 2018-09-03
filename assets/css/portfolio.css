@@ -10,11 +10,10 @@
 }
 
 body {
-    background-color: violet;
+    background-color: #FF1A72;
     font-family: 'Ubuntu', sans-serif;
-    /* color: darkmagenta; */
-    color: ivory;
-
+    /* color: #FBB4BB; */
+    color: #40E0D0;
 }
 
 body > * {
@@ -41,7 +40,7 @@ footer i {
 
 aside footer i {
     font-size: 200%;
-    color: darkmagenta;
+    color: #FBB4BB;
     margin: 0 5px;
 }
 aside {
@@ -94,13 +93,13 @@ aside {
 
 a {
     text-decoration: none;
-    color: ivory;
+    color: #40E0D0;
     transition: all 0.3s 0.05s ease-in-out;
 }
 
 a:hover {
     /* color: deeppink; */
-    color: darkmagenta;
+    color: #FBB4BB;
     font-size: 120%;
 }
 
@@ -128,20 +127,20 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: 1.5px solid ivory;
+    border: 1.5px solid #40E0D0;
     border-radius: 6px;
     padding: 10px;
     margin-left: 15px;
-    /* color: darkmagenta; */
+    /* color: #FBB4BB; */
 }
 
 .header-links:hover {
-    border-color: darkmagenta;
+    border-color: #FBB4BB;
     font-size: 110%;
 }
 
 header h3 {
-    color: darkmagenta;
+    color: #FFBAD4;
     text-align: center;
 }
 
@@ -150,7 +149,7 @@ header h3 {
 hr.header-hr {
     border: 0;
     height: 0; /* Firefox... */
-    box-shadow: 0 0 1px 0.5px darkmagenta;
+    box-shadow: 0 0 1px 0.5px #FBB4BB;
 }
 hr.header-hr {  /* Not really supposed to work, but does */
     content: "\00a0";  /* Prevent margin collapse */
@@ -174,7 +173,7 @@ img, video {
 }
 
 .ES2015-list {
-    color: darkmagenta;
+    color: #FBB4BB;
 }
 
 .nope {
@@ -201,7 +200,7 @@ img, video {
 }
 
 .brand{
-    color: ivory;
+    color: #40E0D0;
     transition: 0.3s 0.05s ease-in-out;
 }
 
