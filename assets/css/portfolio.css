@@ -54,10 +54,21 @@ aside {
 
 .content {
     grid-area: c;
+    margin-bottom: 25px;
 }
 
 .footer {
     grid-area: f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.footer p {
+    text-align: center;
+    font-size: 75%;
+    line-height: 50%;
 }
 
 .top-nav {
