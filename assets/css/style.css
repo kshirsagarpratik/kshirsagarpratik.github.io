@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css');
+@import url("https://afeld.github.io/emoji-css/emoji.css");
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
 
 * {
     margin: 0;
@@ -19,7 +23,7 @@ body {
     flex: 1 1 auto;
     font-family: 'Ubuntu', sans-serif;
     color: rgb(227, 239, 245);
-    background-color: cornflowerblue;
+    background-color: #A79DE7;
 }
 
 .main-content {
