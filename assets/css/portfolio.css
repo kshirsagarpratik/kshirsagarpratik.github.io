@@ -17,6 +17,7 @@ body{
     display: grid;
     justify-items: center;
     line-height: 180%;
+    width: 100%;
 }
 
 .description, .project-title, .header-links{
@@ -291,8 +292,8 @@ aside{
 video{
     grid-area: video;
     justify-self: center;
-    min-width: 55vh;
-    width: 100%;
+    min-width: 50vw;
+    max-width: 100%;
 }
 
 .footer{
@@ -335,9 +336,9 @@ aside footer i {
     color: #CC0953;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
     body{
-        line-height: 170%;
+        line-height: 160%;
     }
 
     a{
@@ -355,7 +356,7 @@ aside footer i {
     }
 
     .description {
-        font-size: 90%;
+        font-size: 80%;
     }
 
     video{
@@ -363,7 +364,7 @@ aside footer i {
     }
 
     .wrapper{
-        width: 90%;
+        width: 95%;
     }
 
     nav.top-nav{
