@@ -39,13 +39,14 @@ body{
 a{
     text-decoration: none;
     color: #F93177;
-    transition: all 0.3s 0.05s ease-in-out;
+    transition: 0.3s 0.05s ease-in-out;
 }
 
 a:hover{
     /* color: deeppink; */
     color: #CC0953;
-    font-size: 120%;
+    /* font-size: 120%; */
+    /* transition: all 0.3s 0.05s ease-in-out; */
 }
 
 .wrapper{
