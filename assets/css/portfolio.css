@@ -4,171 +4,309 @@
 @import url("https://afeld.github.io/emoji-css/emoji.css");
 @import url('https://fonts.googleapis.com/css?family=Signika');
 
-
-* {
+*{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 
-body {
+body{
     background-color: #FFF8F9;
     font-family: 'Ubuntu', sans-serif;
-    color: black;
-}
-
-body > * {
-    padding: 0 15px;
-    /* padding-left: 10px; */
-}
-
-.wrapper {
+    color: #2b2c2d;
     display: grid;
-    height: 100%;
-    /* width: 100%;  */
-    grid-template: 100px auto auto / repeat(12, 1fr);
-    grid-template-areas:
-        "h h h h h h h h h h h h"
-        ". . c c c c c c c c . ."
-        "f f f f f f f f f f f f";
-    /* justify-content: space-evenly; */
-
+    justify-items: center;
+    line-height: 180%;
 }
 
-footer i {
-    color: red;
+.description, .project-title, .header-links{
+    font-family: 'Signika';
 }
 
-aside footer i {
-    font-size: 200%;
-    color: #CC0953;
-    margin: 0 5px;
-}
-aside {
-    text-align: center;
+.description{
+    font-size: 120%;
 }
 
-.header {
-    grid-area: h;
+.wrapper, .content, .description, aside > footer, video, hr, .project-links{
+    margin-top: 12.5px;
 }
 
-.content {
-    grid-area: c;
-    margin-bottom: 25px;
+.project{
+    margin-top: 5px;
 }
 
-.footer {
-    grid-area: f;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer p {
-    text-align: center;
-    font-size: 75%;
-    line-height: 50%;
-}
-
-.top-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.menu-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
-}
-
-.description p {
-    text-align: justify;
-    line-height: 150%;
-    font-size: 110%;
-    margin-top: 20px;
-    font-family: 'Signika', sans-serif;
-}
-
-a {
+a{
     text-decoration: none;
     color: #F93177;
     transition: all 0.3s 0.05s ease-in-out;
 }
 
-a:hover {
+a:hover{
     /* color: deeppink; */
     color: #CC0953;
     font-size: 120%;
 }
 
-header {
-    margin: 2% 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    /* border-bottom: 2px solid rgba(134, 0, 84, 0.3); */
-    ;
+.wrapper{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    width: 70%;
 }
 
-header nav {
-    display: flex;
-    width: 30%;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 23px;
+.header{
+    grid-area: header;
+    display: grid;
+    /* grid-auto-columns: repeat(auto-fit(min-max(200px, 1fr))); */
+    grid-template-areas:
+        "nav";
 }
 
-.header-links {
-    width: 150px;
-    display: flex;
-    justify-content: space-evenly;
+nav.top-nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-areas:
+        "brand menu-items";
+        justify-content: space-around;
+
+}
+
+.brand{
+    grid-area: brand;
+    justify-items: center;
     align-items: center;
-    border: 1.5px solid #F93177;
+}
+
+.projects{
+    grid-area: projects;
+}
+
+.contact{
+    grid-area: contact;
+}
+
+.resume{
+    grid-area: resume;
+}
+
+.menu-items{
+    grid-area: menu-items;
+    display: grid;
+    min-width: 40vw;
+    grid-template-areas:
+        "projects contact resume";
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content{
+    grid-area: content;
+    display: grid;
+    /* grid-template-areas: "project-body"; */
+    /* justify-items: center; */
+    grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5"
+        "p6"
+        "p7"
+        "p8"
+        "p9"
+        "p10"
+}
+
+article.project:nth-of-type(n) {
+    grid-area: p1;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(2n) {
+    grid-area: p2;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(3n) {
+    grid-area: p3;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(4n) {
+    grid-area: p4;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(5n) {
+    grid-area: p5;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(6n) {
+    grid-area: p6;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(7n) {
+    grid-area: p7;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(8n) {
+    grid-area: p8;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(9n) {
+    grid-area: p9;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+article.project:nth-of-type(10n) {
+    grid-area: p10;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hr"
+        "description"
+        "aside"
+        "video";
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+        "title links";
+        align-items: center;
+        justify-content: space-between;
+}
+
+.project-title{
+    grid-area: title;
+}
+
+.project-links{
+    grid-area: links;
+    display: grid;
+    min-width: 30vw;
+    grid-template-areas:
+        "source demo";
+}
+
+.source{
+    grid-area: source;
+    display: grid;
+    justify-items: end;
+}
+.demo{
+    grid-area: demo;
+    display: grid;
+    justify-items: end;
+}
+
+.header-links{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    border: 2px solid #F93177;
     border-radius: 6px;
-    padding: 10px;
-    margin-left: 15px;
-    /* color: #FBB4BB; */
+    min-width: 150px;
 }
 
-.header-links:hover {
-    border-color: #CC0953;
-    font-size: 110%;
+hr{
+    grid-area: hr;
 }
 
-header h3 {
-    color: #CC0953;
-    text-align: center;
-    font-family: 'Signika', sans-serif;
+.description{
+    grid-area: description;
+    text-align: justify;
 }
 
-/* Cloud */
-
-hr.header-hr {
-    border: 0;
-    height: 0; /* Firefox... */
-    box-shadow: 0 0 1px 0.5px #FBB4BB;
-}
-hr.header-hr {  /* Not really supposed to work, but does */
-    content: "\00a0";  /* Prevent margin collapse */
+aside{
+    grid-area: aside;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
-img, video {
-    min-height: 200px;
-    max-height: 50em;
-    min-width: 200px;
-    max-width: 100%;
+video{
+    grid-area: video;
+    justify-self: center;
+    min-width: 55vh;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin: 20px auto;
-    margin-bottom: 40px;
+}
+
+.footer{
+    grid-area: footer;
+    display: grid;
+    place-items: center;
+}
+
+h1, h2, h3, h4, h5{
+    text-align: center;
+}
+
+aside > footer{
+    font-size: 200%;
 }
 
 .description ul {
@@ -180,65 +318,85 @@ img, video {
     color: #F93177;
 }
 
-.nope {
-    display: none;
+hr.header-hr {
+    border: 0;
+    height: 0;
+    /* Firefox... */
+    box-shadow: 0 0 1px 0.5px #FBB4BB;
 }
 
-
-
-/* .top-nav {
-    max-height: 5%;
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 auto;
-    justify-content: space-around;
-    align-items: center;
+hr.header-hr {
+    /* Not really supposed to work, but does */
+    content: "\00a0";
+    /* Prevent margin collapse */
 }
 
-.menu-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
+aside footer i {
+    color: #CC0953;
 }
 
-.brand{
-    color: #40E0D0;
-    transition: 0.3s 0.05s ease-in-out;
-}
-
-.brand:hover {
-    color: purple;
-}
-
-a {
-    text-decoration: none;
-    color: antiquewhite;
-    transition: all 0.3s 0.05s ease-in-out;
-}
-
-a:hover {
-    color: deeppink;
-    font-size: 120%;
-}
-
-h3 {
-    font-size: 125%;
-    margin: auto 15px;
-} */
-
-/* @media screen and (max-width: 480px) {
-    .header {
-        grid-column: span 6;
+@media screen and (max-width: 768px){
+    body{
+        line-height: 170%;
     }
 
-    .menu {
-        grid-row: 1;
-        grid-column: span 6;
+    a{
+        font-size: 80%;
     }
 
-    .content {
-        grid-column: span 12;
+    a:hover {
+        /* color: deeppink; */
+        color: #CC0953;
+        font-size: 85%;
     }
-} */
+
+    .project-title{
+        font-size: 95%;
+    }
+
+    .description {
+        font-size: 90%;
+    }
+
+    video{
+        width: 100%;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+
+    nav.top-nav{
+        grid-template-areas:
+            "brand"
+            "menu-items";
+    }
+
+   .menu-items{
+        grid-template-areas:
+            "projects"
+            "contact"
+            "resume";
+   }
+
+   header{
+        grid-template-areas:
+            "title"
+            "links";
+        align-items: center;
+        justify-content: center;
+   }
+
+   header h4{
+       display: none;
+   }
+
+   .header-links{
+       min-width: 40px;
+       border-radius: 35%;
+   }
+
+   .source, .demo{
+       justify-items: center;
+   }
+}

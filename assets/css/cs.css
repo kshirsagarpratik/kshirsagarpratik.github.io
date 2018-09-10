@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+    display: grid;
+    grid-template-areas:
+        "text";
+    background-image: url("https://octodex.github.com/images/surftocat.png");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Ubuntu';
+    font-size: 200%;
+}
+
+h1{
+    grid-area: text;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        text-align: center;
+    }
+}
+

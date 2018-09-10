@@ -1,0 +1,244 @@
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css');
+@import url("https://afeld.github.io/emoji-css/emoji.css");
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF8F9;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+body > * {
+    padding: 0 15px;
+    /* padding-left: 10px; */
+}
+
+.wrapper {
+    display: grid;
+    height: 100%;
+    /* width: 100%;  */
+    grid-template: 100px auto auto / repeat(12, 1fr);
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        ". . c c c c c c c c . ."
+        "f f f f f f f f f f f f";
+    /* justify-content: space-evenly; */
+
+}
+
+footer i {
+    color: red;
+}
+
+aside footer i {
+    font-size: 200%;
+    color: #CC0953;
+    margin: 0 5px;
+}
+aside {
+    text-align: center;
+}
+
+.header {
+    grid-area: h;
+}
+
+.content {
+    grid-area: c;
+    margin-bottom: 25px;
+}
+
+.footer {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 75%;
+    line-height: 50%;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.description p {
+    text-align: justify;
+    line-height: 150%;
+    font-size: 110%;
+    margin-top: 20px;
+    font-family: 'Signika', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #F93177;
+    transition: all 0.3s 0.05s ease-in-out;
+}
+
+a:hover {
+    /* color: deeppink; */
+    color: #CC0953;
+    font-size: 120%;
+}
+
+header {
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* border-bottom: 2px solid rgba(134, 0, 84, 0.3); */
+    ;
+}
+
+header nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 23px;
+}
+
+.header-links {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1.5px solid #F93177;
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: 15px;
+    /* color: #FBB4BB; */
+}
+
+.header-links:hover {
+    border-color: #CC0953;
+    font-size: 110%;
+}
+
+header h3 {
+    color: #CC0953;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+}
+
+/* Cloud */
+
+hr.header-hr {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 1px 0.5px #FBB4BB;
+}
+hr.header-hr {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+img, video {
+    min-height: 200px;
+    max-height: 50em;
+    min-width: 200px;
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+.description ul {
+    list-style: none;
+    line-height: 150%;
+}
+
+.ES2015-list {
+    color: #F93177;
+}
+
+.nope {
+    display: none;
+}
+
+
+
+/* .top-nav {
+    max-height: 5%;
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.brand{
+    color: #40E0D0;
+    transition: 0.3s 0.05s ease-in-out;
+}
+
+.brand:hover {
+    color: purple;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    transition: all 0.3s 0.05s ease-in-out;
+}
+
+a:hover {
+    color: deeppink;
+    font-size: 120%;
+}
+
+h3 {
+    font-size: 125%;
+    margin: auto 15px;
+} */
+
+/* @media screen and (max-width: 480px) {
+    .header {
+        grid-column: span 6;
+    }
+
+    .menu {
+        grid-row: 1;
+        grid-column: span 6;
+    }
+
+    .content {
+        grid-column: span 12;
+    }
+} */
