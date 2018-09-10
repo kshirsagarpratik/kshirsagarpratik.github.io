@@ -26,7 +26,7 @@ body > * {
     display: grid;
     height: 100%;
     /* width: 100%;  */
-    grid-template: 100px auto auto / repeat(12, 1fr); 
+    grid-template: 100px auto auto / repeat(12, 1fr);
     grid-template-areas:
         "h h h h h h h h h h h h"
         ". . c c c c c c c c . ."
@@ -41,7 +41,7 @@ footer i {
 
 aside footer i {
     font-size: 200%;
-    color:#FAFAFA;
+    color: #CC0953;
     margin: 0 5px;
 }
 aside {
@@ -62,7 +62,7 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .footer p {
@@ -159,10 +159,11 @@ hr.header-hr {  /* Not really supposed to work, but does */
 }
 
 img, video {
-    min-height: 100px;
+    min-height: 200px;
     max-height: 50em;
-    min-width: 100px;
-    max-width: 50em;
+    min-width: 200px;
+    max-width: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -176,7 +177,7 @@ img, video {
 }
 
 .ES2015-list {
-    color: #FBB4BB;
+    color: #F93177;
 }
 
 .nope {
@@ -198,7 +199,7 @@ img, video {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 
 }
 
@@ -231,12 +232,12 @@ h3 {
     .header {
         grid-column: span 6;
     }
-    
+
     .menu {
         grid-row: 1;
         grid-column: span 6;
     }
-    
+
     .content {
         grid-column: span 12;
     }
